@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to @product, notice: "Product was saved." #this is not working
     else
-      render action: "new"
+      render action: "new", notice: "you are mi"
     end
   end
 
