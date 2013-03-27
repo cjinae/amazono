@@ -1,0 +1,13 @@
+<h1>All Products on Amazono</h1>
+
+<%= link_to "New", new_product_path %>
+
+<% @products.each do |p| %>
+
+<p><%= p.name %></p>
+<p><%= p.description %></p>
+<p><%= p.price_in_cents %></p>
+<%= link_to "Edit", edit_product_path(p) %>
+
+<% end %>
+

@@ -1,0 +1,22 @@
+<h1>New Product</h1>
+<%= form_for @product do |p|%>
+<div class = "field">
+<%= p.label :name%> </br>
+<%= p.text_field :name %>
+</div>
+
+<div class = "field">
+<%= p.label :description%> </br>
+<%= p.text_field :description %>
+</div>
+
+<div class = "field">
+<%= p.label :price_in_cents%> </br>
+<%= p.text_field :price_in_cents %>
+</div>
+
+
+<%= p.submit %>
+
+
+<% end %>
